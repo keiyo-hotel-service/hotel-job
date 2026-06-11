@@ -1,23 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <!-- ප්‍රධාන මාතෘකාව (Title) -->
+    <!-- === GOOGLE & YAHOO SEO META TAGS === -->
     <title>Hotel Cleaning Jobs in Narita | Keiyo Hotel Service Co., Ltd.</title>
-    
-    <!-- සෙවුම් යන්ත්‍ර සඳහා කෙටි විස්තරය (Description) -->
     <meta name="description" content="Looking for hotel cleaning jobs in Narita, Japan? Keiyo Hotel Service offers room cleaning vacancies. Part-time welcome, no experience required. 成田のホテル清掃バイト・求人。">
-    
-    <!-- ප්‍රධාන සෙවුම් වචන (Keywords) -->
-    <meta name="keywords" content="hotel cleaning jobs in narita, japan hotel jobs for foreigners, narita hotel cleaning vacancy, room cleaning job chiba, jappan cleaning jobs sinhala, 成田 ホテル清掃 求人, 京葉ホテルサービス">
-    
-    <!-- සෙවුම් බොට්ස්ලාට අවසර දීම -->
+    <meta name="keywords" content="hotel cleaning jobs in narita, japan hotel jobs for foreigners, narita hotel cleaning vacancy, room cleaning job chiba, japan cleaning jobs sinhala, 成田 ホテル清掃 求人, 京葉ホテルサービス">
     <meta name="robots" content="index, follow">
-    <style> ...
     
+    <!-- Open Graph Tags (For Social Media Sharing) -->
+    <meta property="og:title" content="Hotel Cleaning Jobs in Narita | Keiyo Hotel Service Co., Ltd.">
+    <meta property="og:description" content="Join our professional maintenance team in Narita. Part-time & casual welcome. No experience needed.">
+    <meta property="og:type" content="website">
+
+    <style>
         /* --- CSS VARIABLES & THEME --- */
         :root {
             --primary-color: #1a365d; 
@@ -114,6 +112,12 @@
             color: var(--primary-color);
         }
 
+        nav {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
         nav a {
             text-decoration: none;
             color: var(--primary-color);
@@ -128,11 +132,15 @@
             border-bottom: 2px solid var(--secondary-color);
         }
 
+        .lang-switcher {
+            display: flex;
+            gap: 5px;
+        }
+
         .lang-switcher button {
             background-color: #edf2f7;
             border: 2px solid transparent;
             padding: 8px 16px;
-            margin-left: 5px;
             cursor: pointer;
             border-radius: 5px;
             font-weight: bold;
@@ -694,23 +702,15 @@
             document.getElementById('page-btn-contact').classList.remove('active-page');
 
             if (type === 'contact') {
-                document.getElementById('page-btn-contact').classList.add('active-page');
-                
-                // Page 2 - ඊමේල් ලිපිනය මාරු කිරීම
+                document.getElementById('page-btn-contact').add('active-page');
                 emailElement.textContent = 'contact@kiyo-hs.com';
-                
-                // Page 2 - Luxury Images
                 heroSection.style.background = "linear-gradient(rgba(26, 54, 93, 0.85), rgba(26, 54, 93, 0.85)), url('https://images.unsplash.com/photo-1566073771259-6a8506099945?q=80&w=2070&auto=format&fit=crop')";
                 aboutImage.style.backgroundImage = "url('https://images.unsplash.com/photo-1584132967334-10e028bd69f7?q=80&w=1000&auto=format&fit=crop')";
                 job1Image.style.backgroundImage = "url('https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?q=80&w=1000&auto=format&fit=crop')";
                 job2Image.style.backgroundImage = "url('https://images.unsplash.com/photo-1611892440504-42a792e24d32?q=80&w=1000&auto=format&fit=crop')";
             } else {
                 document.getElementById('page-btn-gmail').classList.add('active-page');
-                
-                // Page 1 - ඊමේල් ලිපිනය මාරු කිරීම
                 emailElement.textContent = 'keiyo.hs.kk@gmail.com';
-                
-                // Page 1 - New Beautiful Images
                 heroSection.style.background = "linear-gradient(rgba(26, 54, 93, 0.85), rgba(26, 54, 93, 0.85)), url('https://images.unsplash.com/photo-1540518614846-7eded433c457?q=80&w=2070&auto=format&fit=crop')";
                 aboutImage.style.backgroundImage = "url('https://images.unsplash.com/photo-1590490360182-c33d57733427?q=80&w=1000&auto=format&fit=crop')";
                 job1Image.style.backgroundImage = "url('https://images.unsplash.com/photo-1616594039964-ae9021a400a0?q=80&w=1000&auto=format&fit=crop')";
